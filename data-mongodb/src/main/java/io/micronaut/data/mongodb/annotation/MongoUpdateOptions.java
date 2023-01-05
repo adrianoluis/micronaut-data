@@ -49,6 +49,12 @@ public @interface MongoUpdateOptions {
     boolean bypassDocumentValidation() default false;
 
     /**
+     * The arrayFilters.
+     * @return The arrayFilters value
+     */
+    String[] arrayFilters() default {};
+
+    /**
      * The hint.
      *
      * @return The hint value
